@@ -1,5 +1,4 @@
 const express = require('express')
-const cookieParser = require('cookie-parser')
 const dotenv = require('dotenv')
 const morgan = require('morgan')
 const errorHandler = require('./middleware/error')
@@ -27,7 +26,6 @@ const app = express()
 // Body parser
 app.use(express.json())
 
-app.use(cookieParser())
 
 app.use(cors());
 app.options('*', cors());

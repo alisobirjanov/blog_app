@@ -14,7 +14,6 @@ const PostSchema = new Schema({
     images: {
         type: [{ type: Types.ObjectId, ref: 'Image' }],
         required: false,
-        ref: 'Image',
         default: []
     },
     content: {
